@@ -1,3 +1,6 @@
+# Copyright (c) Jupyter Development Team.
+# Distributed under the terms of the Modified BSD License.
+
 import os
 import sys
 
@@ -12,14 +15,15 @@ with open(os.path.join(here, 'jupyterlab_pygments', '_version.py')) as f:
 setup_args = {
     'name': 'jupyterlab_pygments',
     'version': version_ns['__version__'],
-    'description': 'Pygments theme',
+    'description': 'Pygments theme using JupyterLab CSS variables',
     'packages': find_packages(),
     'zip_safe': False,
     'install_requires': [
         'pygments>=2.4.1,<3'
     ],
-    'author': 'QuantStack',
-    'author_email': 'info@quantstack.net',
+    'author': 'Jupyter Development Team',
+    'author_email': 'jupyter@googlegroups.com',
+    'url': 'http://jupyter.org',
     'keywords': [
         'jupyterlab',
         'pygments'

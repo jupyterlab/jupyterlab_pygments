@@ -1,10 +1,5 @@
-#############################################################################
-# Copyright (c) 2018, jupyterlab_pygments Contributors                      #
-#                                                                           #
-# Distributed under the terms of the BSD 3-Clause License.                  #
-#                                                                           #
-# The full license is in the file LICENSE, distributed with this software.  #
-#############################################################################
+# Copyright (c) Jupyter Development Team.
+# Distributed under the terms of the Modified BSD License.
 
 from pygments.style import Style
 from pygments.token import (

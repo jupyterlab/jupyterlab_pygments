@@ -34,9 +34,6 @@ This includes the ability to differentiate properties from general names.
 
 ## License
 
-We use a shared copyright model that enables all contributors to maintain the
-copyright on their contributions.
-
-This software is licensed under the BSD-3-Clause license. See the
-[LICENSE](LICENSE) file for details.
+`jupyterlab_pygments` uses a shared copyright model that enables all contributors to maintain the
+copyright on their contributions. All code is licensed under the terms of the revised [BSD license](LICENSE).
 
