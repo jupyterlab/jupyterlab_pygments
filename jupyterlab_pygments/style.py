@@ -11,7 +11,7 @@ class JupyterStyle(Style):
     """
     A pygments style using JupyterLab CSS variables.
 
-    The foal is to mimick JupyterLab's codemirror theme.
+    The goal is to mimick JupyterLab's codemirror theme.
 
     Known impossibilities:
 
