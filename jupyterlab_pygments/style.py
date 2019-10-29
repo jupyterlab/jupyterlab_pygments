@@ -129,5 +129,5 @@ Available CSS variables are
         #Generic.Subheading:        '',                                             # class: 'gu'
         #Generic.Traceback:         '',                                             # class: 'gt'
 
-        Punctuation:               'var(-jp-mirror-editor-punctuation-color)'       # class: 'p'
+        Punctuation:               'var(--jp-mirror-editor-punctuation-color)'       # class: 'p'
     }
