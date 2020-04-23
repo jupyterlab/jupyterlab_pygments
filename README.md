@@ -29,7 +29,7 @@ pip install jupyterlab_pygments
 
 - `jupyterlab_pygments` requires [pygments](http://pygments.org) version `2.4.1`.
 - The CSS variables used by the theme correspond to the CodeMirror syntex coloring
-  theme defined in the NPM package [@jupyterlab/codemirror](https://www.npmjs.com/package/@jupyterlab/codemirror) as of version `0.19.1`.
+  theme defined in the NPM package [@jupyterlab/codemirror](https://www.npmjs.com/package/@jupyterlab/codemirror). Supported versions for `@jupyterlab/codemirror`'s CSS include `0.19.1`, `^1.0`, and, `^2.0`.
 
 ## Limitations
 
