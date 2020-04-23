@@ -5,6 +5,12 @@ the JupyterLab CSS variables.
 
 The goal is to enable the use of JupyterLab's themes with pygments-generated HTML.
 
+## Screencast
+
+In the following screencast, we demonstrate how Pygments-highlighted code can make use of the JupyterLab theme.
+
+![pygments screencast](pygments.gif)
+
 ## Installation
 
 `jupyterlab_pygments` can be installed with the conda package manager
@@ -22,7 +28,7 @@ pip install jupyterlab_pygments
 ## Dependencies
 
 - `jupyterlab_pygments` requires [pygments](http://pygments.org) version `2.4.1`.
-- The CSS variables used by the theme correspond to the codemirror syntex coloring
+- The CSS variables used by the theme correspond to the CodeMirror syntex coloring
   theme defined in the NPM package [@jupyterlab/codemirror](https://www.npmjs.com/package/@jupyterlab/codemirror) as of version `0.19.1`.
 
 ## Limitations
