@@ -7,6 +7,8 @@ include install.json
 include ts*.json
 include yarn.lock
 
+include generate_css.py
+
 graft jupyterlab_pygments/labextension
 
 # Javascript files
