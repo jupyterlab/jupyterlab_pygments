@@ -1,34 +1,56 @@
-# Copyright (c) Jupyter Development Team.
-# Distributed under the terms of the Modified BSD License.
+"""
+jupyterlab_pygments setup
+"""
+import json
+from pathlib import Path
+from os.path import join as pjoin
 
-import os
-import sys
+from jupyter_packaging import (
+    wrap_installers,
+    npm_builder,
+    get_data_files,
+    get_version
+)
 
-from setuptools import setup, find_packages
+import setuptools
 
-here = os.path.dirname(os.path.abspath(__file__))
+HERE = Path(__file__).parent.resolve()
 
-version_ns = {}
-with open(os.path.join(here, 'jupyterlab_pygments', '_version.py')) as f:
-    exec(f.read(), {}, version_ns)
+# Get the package info from package.json
+pkg_json = json.loads((HERE / "package.json").read_bytes())
 
-setup_args = {
-    'name': 'jupyterlab_pygments',
-    'version': version_ns['__version__'],
-    'description': 'Pygments theme using JupyterLab CSS variables',
-    'packages': find_packages(),
-    'zip_safe': False,
-    'install_requires': [
-        'pygments>=2.4.1,<3'
-    ],
-    'author': 'Jupyter Development Team',
-    'author_email': 'jupyter@googlegroups.com',
-    'url': 'http://jupyter.org',
-    'keywords': [
-        'jupyterlab',
-        'pygments'
-    ]
-}
+# The name of the project
+name = "jupyterlab_pygments"
 
-setup(**setup_args)
+lab_path = (HERE / pkg_json["jupyterlab"]["outputDir"])
 
+# Representative files that should exist after a successful build
+ensured_targets = [
+    str(lab_path / "package.json"),
+    str(lab_path / "static/style.js")
+]
+
+labext_name = pkg_json["name"]
+
+data_files_spec = [
+    ("share/jupyter/labextensions/%s" % labext_name, str(lab_path.relative_to(HERE)), "**"),
+    ("share/jupyter/labextensions/%s" % labext_name, str("."), "install.json"),
+]
+
+long_description = (HERE / "README.md").read_text()
+
+post_develop = npm_builder(
+    build_cmd="install:extension", source_dir="src", build_dir=lab_path,
+    npm=['jlpm']
+)
+
+setup_args = dict(
+    version=get_version(pjoin(name, '_version.py')),
+    cmdclass=wrap_installers(
+        post_develop=post_develop, ensured_targets=ensured_targets
+    ),
+    data_files=get_data_files(data_files_spec)
+)
+
+if __name__ == "__main__":
+    setuptools.setup(**setup_args)

@@ -53,7 +53,7 @@ Available CSS variables are
 
     styles = {
         Text:                      'var(--jp-mirror-editor-variable-color)',        # no class
-        Whitespace:                '',                                              # class: 'w' 
+        Whitespace:                '',                                              # class: 'w'
         Error:                     'var(--jp-mirror-editor-error-color)',           # class: 'err'
         Other:                     '',                                              # class: 'x'
 
