@@ -9,9 +9,7 @@ import {
 const plugin: JupyterFrontEndPlugin<void> = {
   id: 'jupyterlab_pygments:plugin',
   autoStart: true,
-  activate: (app: JupyterFrontEnd) => {
-    console.log('JupyterLab extension jupyterlab_pygments is activated!');
-  }
+  activate: (app: JupyterFrontEnd) => {}
 };
 
 export default plugin;
