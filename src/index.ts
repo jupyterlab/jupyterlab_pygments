@@ -9,7 +9,9 @@ import {
 const plugin: JupyterFrontEndPlugin<void> = {
   id: 'jupyterlab_pygments:plugin',
   autoStart: true,
-  activate: (app: JupyterFrontEnd) => {}
+  activate: (app: JupyterFrontEnd) => {
+    // This plugin only brings CSS style rules
+  }
 };
 
 export default plugin;
