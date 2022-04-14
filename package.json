@@ -1,6 +1,6 @@
 {
   "name": "jupyterlab_pygments",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Pygments theme using JupyterLab CSS variables",
   "keywords": [
     "jupyter",
