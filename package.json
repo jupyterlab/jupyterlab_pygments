@@ -54,10 +54,10 @@
     "watch:labextension": "jupyter labextension watch ."
   },
   "dependencies": {
-    "@jupyterlab/application": "^3.1.0"
+    "@jupyterlab/application": "^4.0.0-alpha.22"
   },
   "devDependencies": {
-    "@jupyterlab/builder": "^3.1.0",
+    "@jupyterlab/builder": "^4.0.0-alpha.22",
     "@typescript-eslint/eslint-plugin": "^4.8.1",
     "@typescript-eslint/parser": "^4.8.1",
     "eslint": "^7.14.0",
@@ -71,7 +71,7 @@
     "stylelint-config-recommended": "^6.0.0",
     "stylelint-config-standard": "~24.0.0",
     "stylelint-prettier": "^2.0.0",
-    "typescript": "~4.1.3"
+    "typescript": "5.0.3"
   },
   "sideEffects": [
     "style/*.css",
@@ -88,7 +88,7 @@
   "jupyter-releaser": {
     "hooks": {
       "before-build-npm": [
-        "python -m pip install jupyterlab~=3.1",
+        "python -m pip install jupyterlab==4.0.0a37",
         "jlpm"
       ],
       "before-build-python": [
