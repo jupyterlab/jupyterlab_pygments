@@ -10,7 +10,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
   id: 'jupyterlab_pygments:plugin',
   autoStart: true,
   activate: (app: JupyterFrontEnd) => {
-    // This plugin only brings CSS style rules
+    console.log('JupyterLab extension jupyterlab_pygments is activated!');
   }
 };
 

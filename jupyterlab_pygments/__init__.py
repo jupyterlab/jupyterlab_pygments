@@ -1,5 +1,4 @@
-from ._version import __version__  # noqa
-from .style import JupyterStyle  # noqa
+from ._version import __version__
 
 
 def _jupyter_labextension_paths():
@@ -7,3 +6,4 @@ def _jupyter_labextension_paths():
         "src": "labextension",
         "dest": "jupyterlab_pygments"
     }]
+
