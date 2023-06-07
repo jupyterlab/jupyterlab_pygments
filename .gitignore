@@ -6,6 +6,7 @@ node_modules/
 *.egg-info/
 .ipynb_checkpoints
 *.tsbuildinfo
+style/base.css
 jupyterlab_pygments/labextension
 # Version file is handled by hatchling
 jupyterlab_pygments/_version.py
