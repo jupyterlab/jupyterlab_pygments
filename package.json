@@ -59,8 +59,6 @@
   },
   "devDependencies": {
     "@jupyterlab/builder": "^4.0.0",
-    "@types/json-schema": "^7.0.11",
-    "@types/react": "^18.0.26",
     "@typescript-eslint/eslint-plugin": "^5.55.0",
     "@typescript-eslint/parser": "^5.55.0",
     "css-loader": "^6.7.1",
@@ -77,8 +75,7 @@
     "stylelint-config-recommended": "^8.0.0",
     "stylelint-config-standard": "^26.0.0",
     "stylelint-prettier": "^2.0.0",
-    "typescript": "~5.0.2",
-    "yjs": "^13.5.40"
+    "typescript": "~5.0.2"
   },
   "sideEffects": [
     "style/*.css",
