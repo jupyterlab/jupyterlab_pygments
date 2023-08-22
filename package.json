@@ -80,6 +80,11 @@
         "stylelint-prettier": "^4.0.0",
         "typescript": "~5.0.2"
     },
+    "resolutions": {
+      "@types/json-schema": "^7.0.11",
+      "@types/react": "^18.0.26",
+      "yjs": "^13.5.40"
+    },
     "sideEffects": [
         "style/*.css",
         "style/index.js"
