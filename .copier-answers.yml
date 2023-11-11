@@ -11,4 +11,3 @@ project_short_description: Pygments theme using JupyterLab CSS variables
 python_name: jupyterlab_pygments
 repository: https://github.com/jupyterlab/jupyterlab_pygments.git
 test: false
-
