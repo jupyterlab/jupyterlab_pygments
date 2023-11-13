@@ -124,3 +124,6 @@ dmypy.json
 
 # JupyterLab upgrade script
 _temp_extension
+
+# package.json lock file
+package-lock.json
